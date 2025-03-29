@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Word Counter</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Word Counter</h1>
+      <button id="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+    
+    <div class="text-area">
+      <textarea id="text-input" placeholder="Start typing or paste your text here..."></textarea>
+    </div>
+    
+    <div class="stats">
+      <div class="stat-card">
+        <span class="stat-value" id="word-count">0</span>
+        <span class="stat-label">Words</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="char-count">0</span>
+        <span class="stat-label">Characters</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="sentence-count">0</span>
+        <span class="stat-label">Sentences</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="paragraph-count">0</span>
+        <span class="stat-label">Paragraphs</span>
+      </div>
+    </div>
+    
+    <div class="progress-container">
+      <div class="progress-bar" id="readability-bar">
+        <div class="progress-fill"></div>
+      </div>
+      <span class="progress-label">Readability Score</span>
+    </div>
+  </div>
+  
+  <script src="index.js"></script>
+</body>
+</html>
